@@ -1,6 +1,6 @@
 pipeline {  
     environment { 
-        registry = "shashikantvermaji/java"  
+        registry = "navjitkaur/jenmav"  
         registryCredential = 'docker'  
         dockerImage = '' 
     }
@@ -9,7 +9,7 @@ pipeline {
         stage('Cloning our Git') { 
              steps {  
                  
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '98a69b20-e09c-4c58-8654-69feb048011e', url: 'https://github.com/shashikantvermaji/test1.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '4ffd37ad-1445-4bfa-84f5-2ee9fcdc08ee', url: 'https://github.com/NavjitK/jenmav.git']]])
             }
             
          } 
